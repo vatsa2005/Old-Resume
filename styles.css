@@ -1,0 +1,32 @@
+/*Priority: inline css > internal css > external css*/
+/*General syntax:
+      selector{property: value;}
+*/
+body {
+    background-color: #F6F1F1;
+}
+hr {
+    background-color: #F6F1F1;
+    border-style: none; /*We're changing the default browser css.*/
+    border-bottom-style: dotted; /*It can also be the top one.*/
+    border-color: grey;
+    border-width: 10px;
+    height: 2px; /*We got rid of border from above. So the border is of 0px. Now we have to increase the height*/
+    width: 10%; /*Use % instead of px for responsive design. This says that the width must be 30% of the entire screen width*/
+}
+img{
+    height: 150px;
+}
+h1, h3 {
+    color: #66BFBF;
+}
+
+/*Id and class selectors will overwrite the tag selectors ie it has more priority than tag selectors*/
+
+/*
+Id's vs classes
+Id is unique whereas class can be used multiple times
+
+*/
+/*Have all the props in alphabetical order*/
+/*Id selectors will overwrite the tag selectors*/
